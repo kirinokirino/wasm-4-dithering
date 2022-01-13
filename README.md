@@ -6,6 +6,11 @@ the normal 4-color image looks better (see botan).
 It works better for gradual change (see lines), maybe it might even work if you choose red-green-blue palette.
 Probably there is an easier way to do that though.
 
+![botan without dithering.](https://github.com/kirinokirino/wasm-4-dithering/blob/main/botan.png)
+![botan with dithering.](https://github.com/kirinokirino/wasm-4-dithering/blob/main/botan_dithered.png)
+![Gradient lines without dithering.](https://github.com/kirinokirino/wasm-4-dithering/blob/main/lines.png)
+![Gradient lines with dithering.](https://github.com/kirinokirino/wasm-4-dithering/blob/main/lines_dithered.png)
+
 from the target/wasm32-unknown-unknown/release folder:
 ```cargo build --release; stat cart.wasm | rg Size ; w4 run ./cart.wasm --no-open --no-qr```
 
